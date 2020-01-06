@@ -1,0 +1,111 @@
+*{margin: 0px;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+  }
+
+/* Section-1 */
+
+#sec1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#sec1 .logo{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+}
+
+/* Texto animado */
+.shapes {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    overflow: hidden;
+  }
+   
+  .shape {
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .shape.shape-1 {
+    background: black;
+    width: 650px;
+    height: 650px;
+    margin: -325px 0 0 -325px;
+  }
+  .shape.shape-2 {
+    background: red;
+    width: 440px;
+    height: 440px;
+    margin: -220px 0 0 -220px;
+  }
+  .shape.shape-3 {
+    background: #1da1f2;
+    width: 270px;
+    height: 270px;
+    margin: -135px 0 0 -135px;
+  }
+   
+  .text {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    mix-blend-mode: screen;
+    cursor: none;
+  }
+   
+  .text h1 {
+    font-size: 20vh;
+    color: black;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+   
+  .cursor {
+    position: fixed;
+    background-image: url(img/think-brand-black.png);
+    background-position: center;
+    background-size: cover;
+    width: 8vh;
+    height: 8vh;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    will-change: transform;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+  }
+   
+  ::-moz-selection {
+    color: #fff;
+    background: #e60023;
+  }
+   
+  ::selection {
+    color: #fff;
+    background: #e60023;
+  }
